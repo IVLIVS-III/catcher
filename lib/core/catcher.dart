@@ -97,6 +97,10 @@ class Catcher with ReportModeAction {
     }
   }
 
+  void configureNavigatorKey(GlobalKey<NavigatorState>? navigatorKey) {
+    _configureNavigatorKey(navigatorKey);
+  }
+
   void _configureNavigatorKey(GlobalKey<NavigatorState>? navigatorKey) {
     if (navigatorKey != null) {
       _navigatorKey = navigatorKey;
